@@ -11,11 +11,11 @@ void task1()
     cout << "Enter y: ";
     cin >> y;
     // 1
-    if ((x % 2 != 0) && (y % 2 != 0)){
+    if ((x % 2 != 0) && (y % 2 != 0)) {
         cout << "each of the numbers X and Y is odd" << endl;
     }
     // 2
-    if (((x < 20) && (y > 20)) || ((x > 0) && (y < 0))) {
+    if (((x < 20) && (y > 20)) || ((x > 20) && (y < 20)) {
         cout << "only one of the numbers X and Y is less than 20" << endl;
     }
     // 3
@@ -44,20 +44,12 @@ void task1()
 }
 
 void task2() {
-    int a = 0;
-    int b = 0;
-    cout << "Enter first fugure's placing: " << endl;
-    cin >> a >> b;
     pair<int, int> figure1;
-    figure1.first = a;
-    figure1.second = b;
-    int c = 0;
-    int d = 0;
+    cout << "Enter first fugure's placing: " << endl;
+    cin >> figure1.first >> figure1.second;
     cout << "Enter second figure's placing: " << endl;
-    cin >> c >> d;
     pair<int, int> figure2;
-    figure2.first = c;
-    figure2.second = d;
+    cin >> figure2.first >> figure2.second;
     if ((figure1.first == figure2.first) || (figure1.second == figure2.second)) {
         cout << "the rook threatens the playing field"  << endl;
     }
