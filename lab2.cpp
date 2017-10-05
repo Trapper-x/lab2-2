@@ -15,14 +15,8 @@ void task1()
         cout << "each of the numbers X and Y is odd" << endl;
     }
     // 2
-    if (((x < 20) && (y > 20)) || ((x > 20) && (y < 20))) {
+    if (((x < 20) && (y >= 20)) || ((x >= 20) && (y < 20))) {
         cout << "only one of the numbers X and Y is less than 20" << endl;
-    } else if ((x < 20) && (y < 20)) {
-        cout << "both numbers are less then 20" << endl;
-    } else if ((x == 20) && (y == 20)) {
-        cout << "both numders are equal to 20" << endl;
-    } else if ((x > 20) && (y > 20)) {
-        cout << "both numbers are greater then 20" << endl;
     }
     // 3
     if ((x == 0) || (y == 0)) {
